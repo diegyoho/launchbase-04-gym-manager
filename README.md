@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  Gym Manager: Controle de Acadêmia
+  Desafio: Gym Manager: Controle de Acadêmia
 </h3>
 
 <p align="center">
