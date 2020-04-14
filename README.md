@@ -29,13 +29,13 @@
 </p>
 
 <div align="center">
-    <img alt="Exemplo" src="https://github.com/chicodiegomoreira/launchbase-04-gym-manager/blob/master/previews/preview-1.png" width="100%" />
+    <img alt="Exemplo" src="https://github.com/chicodiegomoreira/launchbase-04-gym-manager/blob/master/previews/preview-2.png" width="100%" />
 </div>
 
 ## Desafios
 - [x] Desafio 4-1: Header 
 <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-1-header.md">Descrição</a>
-- [ ] Desafio 4-2: Card do Professor 
+- [x] Desafio 4-2: Card do Professor 
 <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-2-card-teacher.md">Descrição</a>
 - [ ] Desafio 4-3: Formulário e Rota de cadastro do Professor 
 <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-3-form-and-routes-teacher.md">Descrição</a>
