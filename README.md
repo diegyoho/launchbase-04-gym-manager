@@ -35,6 +35,18 @@
 ## Desafios
 - [x] Desafio 4-1: Header 
 <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-1-header.md">Descrição</a>
+- [ ] Desafio 4-2: Card do Professor 
+<a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-2-card-teacher.md">Descrição</a>
+- [ ] Desafio 4-3: Formulário e Rota de cadastro do Professor 
+<a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-3-form-and-routes-teacher.md">Descrição</a>
+- [ ] Desafio Desafio 4-4: Apresentação, edição e formatação dos dados de um professor 
+<a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-4-show-edit-format-teacher.md">Descrição</a>
+- [ ] Desafio 4-5: HTTP: PUT e DELETE 
+<a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-5-put-delete-teacher.md">Descrição</a>
+- [ ] Desafio 4-6: Listagem de professores
+<a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-6-list-teachers.md">Descrição</a>
+- [ ] Desafio 4-7: Estruturando estudantes
+<a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-7-students.md">Descrição</a>
 
 #### Instalação:
 
