@@ -1,0 +1,14 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "https://teste.com",
+      "name": "Diego Moreira",
+      "birth": 20586873600000,
+      "gender": "M",
+      "degree": "0",
+      "services": "sedentarismo",
+      "created_at": 1586968657570
+    }
+  ]
+}
