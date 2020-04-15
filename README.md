@@ -39,7 +39,7 @@
 <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-2-card-teacher.md">Descrição</a>
 - [x] Desafio 4-3: Formulário e Rota de cadastro do Professor 
 <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-3-form-and-routes-teacher.md">Descrição</a>
-- [ ] Desafio Desafio 4-4: Apresentação, edição e formatação dos dados de um professor 
+- [ ] Desafio 4-4: Apresentação, edição e formatação dos dados de um professor 
 <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-4-show-edit-format-teacher.md">Descrição</a>
 - [ ] Desafio 4-5: HTTP: PUT e DELETE 
 <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-5-put-delete-teacher.md">Descrição</a>
