@@ -1,14 +1,24 @@
 {
-  "instructors": [
-    {
-      "id": 1,
-      "avatar_url": "https://teste.com",
-      "name": "Diego Moreira",
-      "birth": 20586873600000,
-      "gender": "M",
-      "degree": "0",
-      "services": "sedentarismo",
-      "created_at": 1586968657570
-    }
-  ]
+    "instructors": [
+        {
+            "id": 1,
+            "avatar_url": "http://source.unsplash.com/collection/3465564/512x512",
+            "name": "Diego Moreira",
+            "birth": 857779200000,
+            "gender": "M",
+            "degree": "0",
+            "services": "musculação",
+            "created_at": 1586977723413
+        },
+        {
+            "id": 2,
+            "avatar_url": "http://source.unsplash.com/collection/3465564/512x512",
+            "name": "Carolina Maia",
+            "birth": 729993600000,
+            "gender": "F",
+            "degree": "2",
+            "services": "musculação, crossfit, natação",
+            "created_at": 1586977791967
+        }
+    ]
 }

@@ -1,5 +1,27 @@
 const fs = require('fs')
 const data = require('./data.json')
+const { age, date, degree } = require('./utils')
+const Intl = require('intl')
+
+exports.show = function (req, res) {
+    const { id } = req.params
+
+    const foundInstructor = data.instructors.find(function (instructor) {
+        return instructor.id == id
+    })
+
+    if (!foundInstructor) return res.send('Instrutor não encontrado!')
+
+    const instructor = {
+        ...foundInstructor,
+        age: age(foundInstructor.birth),
+        degree: degree(foundInstructor.degree),
+        services: foundInstructor.services.split(','),
+        created_at: new Intl.DateTimeFormat('pt-br').format(foundInstructor.created_at)
+    }
+
+    return res.render('instructors/show', { instructor })
+}
 
 exports.post = function (req, res) {
 
@@ -28,4 +50,23 @@ exports.post = function (req, res) {
 
         return res.redirect('/instructors')
     })
+}
+
+exports.edit = function (req, res) {
+    const { id } = req.params
+
+    const foundInstructor = data.instructors.find(function (instructor) {
+        return instructor.id == id
+    })
+
+    if (!foundInstructor) return res.send('Instrutor não encontrado!')
+
+    const instructor = {
+        ...foundInstructor,
+        birth: date(foundInstructor.birth),
+        services: foundInstructor.services.split(','),
+        created_at: new Intl.DateTimeFormat('pt-br').format(foundInstructor.created_at)
+    }
+
+    return res.render('instructors/edit', { instructor })
 }

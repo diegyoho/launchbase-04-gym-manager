@@ -93,10 +93,6 @@ header {
     }
 }
 
-.avatar {
-    background: url('http://source.unsplash.com/collection/8353395/512x512') no-repeat center center / cover;
-}
-
 .details {
     color: var(--terciary-color);
     padding: 32px;
@@ -174,6 +170,7 @@ input::placeholder {
     font-weight: normal;
 }
 
+a.button,
 button[type="submit"] {
     padding: 8px 32px;
     background-color: var(--primary-color);
@@ -182,4 +179,10 @@ button[type="submit"] {
     width: 100%;
     font-size: 16px;
     cursor: pointer;
+}
+
+a.button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
 }
