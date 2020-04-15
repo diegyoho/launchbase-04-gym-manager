@@ -63,9 +63,7 @@ exports.edit = function (req, res) {
 
     const instructor = {
         ...foundInstructor,
-        birth: date(foundInstructor.birth),
-        services: foundInstructor.services.split(','),
-        created_at: new Intl.DateTimeFormat('pt-br').format(foundInstructor.created_at)
+        birth: date(foundInstructor.birth)
     }
 
     return res.render('instructors/edit', { instructor })
