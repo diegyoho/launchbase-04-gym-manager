@@ -1,16 +1,6 @@
 {
   "instructors": [
     {
-      "id": 1,
-      "avatar_url": "http://source.unsplash.com/collection/3465564/512x512",
-      "name": "Diego Moreira",
-      "birth": 857779200000,
-      "gender": "M",
-      "degree": "1",
-      "services": "musculação, natação",
-      "created_at": 1586977723413
-    },
-    {
       "id": 2,
       "avatar_url": "http://source.unsplash.com/collection/3465564/512x512",
       "name": "Carolina Maia",
@@ -19,6 +9,16 @@
       "degree": "2",
       "services": "musculação, crossfit, natação",
       "created_at": 1586977791967
+    },
+    {
+      "id": 2,
+      "avatar_url": "http://source.unsplash.com/collection/3465564/512x512",
+      "name": "Diego Moreira",
+      "birth": 857779200000,
+      "gender": "M",
+      "degree": "0",
+      "services": "musculação, natação",
+      "created_at": 1586988932764
     }
   ]
 }

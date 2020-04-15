@@ -34,7 +34,7 @@ exports.post = function (req, res) {
 
     const { avatar_url, name, birth, gender, degree, services } = req.body
 
-    data.instructors.push({
+    const instructor = {
         id: Number(data.instructors.length + 1),
         avatar_url,
         name,
@@ -43,7 +43,9 @@ exports.post = function (req, res) {
         degree,
         services,
         created_at: Date.now()
-    })
+    }
+
+    data.instructors.push(instructor)
 
     fs.writeFile('data.json', JSON.stringify(data, null, 2), function (err) {
         if (err) return res.send("Erro na escrita do arquivo!")
@@ -95,5 +97,21 @@ exports.update = function (req, res) {
         if (err) return res.send("Erro na escrita do arquivo!")
 
         return res.redirect(`/instructors/${id}`)
+    })
+}
+
+exports.delete = function (req, res) {
+    const { id } = req.body
+
+    const filteredInstructors = data.instructors.filter(function (instructor, foundIndex) {
+        return instructor.id != id
+    })
+
+    data.instructors = filteredInstructors
+
+    fs.writeFile('data.json', JSON.stringify(data, null, 2), function (err) {
+        if (err) return res.send("Erro na escrita do arquivo!")
+
+        return res.redirect('/instructors')
     })
 }

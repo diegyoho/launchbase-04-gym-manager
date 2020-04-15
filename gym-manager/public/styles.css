@@ -171,6 +171,7 @@ input::placeholder {
 }
 
 a.button,
+form#delete button[type="submit"],
 button[type="submit"] {
     padding: 8px 32px;
     background-color: var(--primary-color);
@@ -185,4 +186,15 @@ a.button {
     display: block;
     text-align: center;
     text-decoration: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    align-items: center;
+}
+
+form#delete button[type="submit"] {
+    background-color: #f00;
 }

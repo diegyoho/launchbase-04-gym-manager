@@ -29,7 +29,7 @@
 </p>
 
 <div align="center">
-    <img alt="Exemplo" src="https://github.com/chicodiegomoreira/launchbase-04-gym-manager/blob/master/previews/preview-3.gif" width="100%" />
+    <img alt="Exemplo" src="https://github.com/chicodiegomoreira/launchbase-04-gym-manager/blob/master/previews/preview-4.gif" width="100%" />
 </div>
 
 ## Desafios
@@ -41,7 +41,7 @@
 <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-3-form-and-routes-teacher.md">Descrição</a>
 - [x] Desafio 4-4: Apresentação, edição e formatação dos dados de um professor 
 <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-4-show-edit-format-teacher.md">Descrição</a>
-- [ ] Desafio 4-5: HTTP: PUT e DELETE 
+- [x] Desafio 4-5: HTTP: PUT e DELETE 
 <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-5-put-delete-teacher.md">Descrição</a>
 - [ ] Desafio 4-6: Listagem de professores
 <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-6-list-teachers.md">Descrição</a>
