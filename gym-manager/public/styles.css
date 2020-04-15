@@ -69,8 +69,8 @@ header {
 .card {
     background-color: var(--secondary-color);
     width: 640px;
-    min-height: 480px;
-    margin: 48px auto;
+    min-height: 400px;
+    margin: 48px auto 0;
 
     display: grid;
 
@@ -103,7 +103,16 @@ header {
 }
 
 .details .item {
-    padding: 16px 0;
+    padding: 16px 0 8px;
+}
+
+.details .item:nth-child(7) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.details .item:last-child {
+    padding-bottom: 0;
+    border: none;
 }
 
 .details .item + .item {
@@ -133,8 +142,44 @@ header {
     background-color: var(--primary-color);
     border-radius: 16px;
     color: var(--secondary-color);
-    margin: 8px 4px 0 0;
+    margin-right: 4px;
+    margin-top: 8px;
     display: inline-block;
     text-transform: uppercase;
+    font-weight: bold;
     font-size: 12px;
+}
+
+/* === FORM === */
+
+input, select {
+    width: 100%;
+    outline: none;
+    background-color: var(--secondary-color);
+    color: var(--terciary-color);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input[type="radio"] {
+    width: initial;
+    vertical-align: middle;
+    margin-top: -1px;
+    margin-right: 6px;
+    margin-left: -6px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+button[type="submit"] {
+    padding: 8px 32px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin-top: 32px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
 }
