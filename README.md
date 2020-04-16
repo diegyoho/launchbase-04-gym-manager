@@ -58,14 +58,6 @@ npm install
 ```
 npm start
 ```
-Se tudo der certo, esta mensagem deve ser mostrada no terminal:
-
-```
-Server is running on port: 5000!
-Application can be accessed at the address: http://localhost:5000
-```
-
-Acesse no navegador: [http://localhost:5000](http://localhost:5000)
 
 ###### Código [aqui](https://github.com/chicodiegomoreira/launchbase-04-gym-manager/tree/master/gym-manager)!
 
