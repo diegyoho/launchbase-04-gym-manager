@@ -42,12 +42,12 @@
             </div>
             <div class="buttons">
                 <a href="/instructors/{{ instructor.id }}/edit" class="button">Editar</a>
-                <form id="delete" action="/instructors?_method=DELETE" method="POST">
+                <form id="form-delete" action="/instructors?_method=DELETE" method="POST">
                     <input type="hidden" name="id" value="{{ instructor.id }}">
                     <button type="submit">Deletar</button>
                 </form>
             </div>
         </section>
     </div>
-
+    {% include 'confirm.njk' %}
 {% endblock content %}

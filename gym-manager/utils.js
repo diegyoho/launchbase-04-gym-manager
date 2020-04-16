@@ -18,15 +18,35 @@ module.exports = {
         const month = `0${date.getUTCMonth() + 1}`.slice(-2)
         const day = `0${date.getUTCDate()}`.slice(-2)
 
-        return `${year}-${month}-${day}`
+        return {
+            year,
+            month,
+            day,
+            iso: `${year}-${month}-${day}`,
+            birthDay: `${day}/${month}`
+        }
     },
     degree: function (id) {
         const degrees = [
-            "Graduação",
-            "Mestrado",
-            "Doutorado"
+            'Graduação',
+            'Mestrado',
+            'Doutorado'
         ]
 
         return degrees[id]
+    },
+    blood: function (id) {
+        const bloods = [
+            'A+',
+            'A-',
+            'B+',
+            'B-',
+            'AB+',
+            'AB-',
+            'O+',
+            'O-'
+        ]
+
+        return bloods[id]
     }
 }

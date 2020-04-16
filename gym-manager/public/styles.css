@@ -103,17 +103,12 @@ header {
     padding: 16px 0 8px;
 }
 
-.details .item:nth-child(7) {
-    border-bottom: 1px solid var(--quarternary-color);
+.details .item + .item {
+    border-top: 1px solid var(--quarternary-color);
 }
 
 .details .item:last-child {
-    padding-bottom: 0;
-    border: none;
-}
-
-.details .item + .item {
-    border-top: 1px solid var(--quarternary-color);
+    border-bottom: 1px solid var(--quarternary-color);
 }
 
 .details h3,
@@ -172,7 +167,7 @@ input::placeholder {
 }
 
 a.button,
-form#delete button[type="submit"],
+#form-delete button[type="submit"],
 button[type="submit"] {
     padding: 8px 32px;
     background-color: var(--primary-color);
@@ -196,7 +191,7 @@ a.button {
     align-items: center;
 }
 
-form#delete button[type="submit"] {
+#form-delete button[type="submit"] {
     background-color: #f00;
 }
 
@@ -213,7 +208,7 @@ form#delete button[type="submit"] {
 
 td, th {
     text-align: center;
-    padding: 16px;
+    padding: 12px;
     font-weight: bold;
     border-bottom: 1px solid var(--quarternary-color);
 }
@@ -232,16 +227,17 @@ tr:last-child td {
 
 tbody tr td:first-child {
     display: grid;
-    grid-template-columns: 48px 1fr;
+    grid-template-columns: 64px 1fr;
     align-items: center;
 }
 
 tbody tr td:first-child span {
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: 64px;
     background-position: center;
     background-size: cover;
     border-radius: 50%;
+    border: 2px solid var(--primary-color);
 }
 
 th {

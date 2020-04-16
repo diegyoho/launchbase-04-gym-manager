@@ -1,4 +1,17 @@
 {
+  "members": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1553531580-a000ac8df244?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60",
+      "name": "Deborah Vitória",
+      "email": "deborah@email.com",
+      "birth": 1011830400000,
+      "gender": "F",
+      "blood": "6",
+      "height": "150",
+      "weight": "50"
+    }
+  ],
   "instructors": [
     {
       "id": 1,
@@ -12,13 +25,13 @@
     },
     {
       "id": 2,
-      "avatar_url": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+      "avatar_url": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60",
       "name": "Diego Moreira",
       "birth": 857779200000,
       "gender": "M",
       "degree": "0",
       "services": "musculação, natação",
-      "created_at": 1586988932764
+      "created_at": 1587066072115
     }
   ]
 }

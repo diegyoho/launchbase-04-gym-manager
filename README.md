@@ -29,7 +29,7 @@
 </p>
 
 <div align="center">
-    <img alt="Exemplo" src="https://github.com/chicodiegomoreira/launchbase-04-gym-manager/blob/master/previews/preview-5.gif" width="100%" />
+    <img alt="Exemplo" src="https://github.com/chicodiegomoreira/launchbase-04-gym-manager/blob/master/previews/preview-6.gif" width="100%" />
 </div>
 
 ## Desafios
@@ -45,7 +45,7 @@
 <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-5-put-delete-teacher.md">Descrição</a>
 - [x] Desafio 4-6: Listagem de professores
 <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-6-list-teachers.md">Descrição</a>
-- [ ] Desafio 4-7: Estruturando estudantes
+- [x] Desafio 4-7: Estruturando estudantes
 <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-7-students.md">Descrição</a>
 
 #### Instalação:

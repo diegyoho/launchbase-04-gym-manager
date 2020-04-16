@@ -1,47 +1,49 @@
-<div class="item">
-    <div>Avatar</div>
-    <div>
-        <input type="url" name="avatar_url" placeholder="https://" value="{{ instructor.avatar_url }}">
+<div>
+    <div class="item">
+        <div>Avatar</div>
+        <div>
+            <input type="url" name="avatar_url" placeholder="https://" value="{{ instructor.avatar_url }}">
+        </div>
     </div>
-</div>
 
-<div class="item">
-    <div>Nome</div>
-    <div>
-        <input type="text" name="name" placeholder="Nome do Instrutor" value="{{ instructor.name }}">
+    <div class="item">
+        <div>Nome</div>
+        <div>
+            <input type="text" name="name" placeholder="Nome do Instrutor" value="{{ instructor.name }}">
+        </div>
     </div>
-</div>
 
-<div class="item">
-    <div>Data de Nascimento</div>
-    <div>
-        <input type="date" name="birth" value="{{ instructor.birth }}">
+    <div class="item">
+        <div>Data de Nascimento</div>
+        <div>
+            <input type="date" name="birth" value="{{ instructor.birth }}">
+        </div>
     </div>
-</div>
 
-<div class="item">
-    <div>Sexo</div>
-    <div>
-        <span class="label"><input type="radio" name="gender" value="M" {% if instructor.gender == 'M' %} checked="checked" {% endif %}>Masculino</span>
-        <span class="label"><input type="radio" name="gender" value="F" {% if instructor.gender == 'F' %} checked="checked" {% endif %}>Feminino</span>
+    <div class="item">
+        <div>Sexo</div>
+        <div>
+            <span class="label"><input type="radio" name="gender" value="M" {% if instructor.gender == 'M' %} checked="checked" {% endif %}>Masculino</span>
+            <span class="label"><input type="radio" name="gender" value="F" {% if instructor.gender == 'F' %} checked="checked" {% endif %}>Feminino</span>
+        </div>
     </div>
-</div>
 
-<div class="item">
-    <div>Formação</div>
-    <div>
-        <select name="degree">
-            <option value="0" {% if instructor.degree == '0' %} selected="selected" {% endif %}>Graduação</option>
-            <option value="1" {% if instructor.degree == '1' %} selected="selected" {% endif %}>Mestrado</option>
-            <option value="2" {% if instructor.degree == '2' %} selected="selected" {% endif %}>Doutorado</option>
-        </select>
+    <div class="item">
+        <div>Formação</div>
+        <div>
+            <select name="degree">
+                <option value="0" {% if instructor.degree == '0' %} selected="selected" {% endif %}>Graduação</option>
+                <option value="1" {% if instructor.degree == '1' %} selected="selected" {% endif %}>Mestrado</option>
+                <option value="2" {% if instructor.degree == '2' %} selected="selected" {% endif %}>Doutorado</option>
+            </select>
+        </div>
     </div>
-</div>
 
-<div class="item">
-    <div>Área de Atuação</div>
-    <div>
-        <input type="text" name="services" placeholder="Separe os serviços por vírgula" value="{{ instructor.services }}">
+    <div class="item">
+        <div>Área de Atuação</div>
+        <div>
+            <input type="text" name="services" placeholder="Separe os serviços por vírgula" value="{{ instructor.services }}">
+        </div>
     </div>
 </div>
 
