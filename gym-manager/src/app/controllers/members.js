@@ -10,7 +10,9 @@ module.exports = {
         })
     },
     create(req, res) {
-        return res.render('members/create')
+        Instructor.all(function (instructors) {
+            return res.render('members/create', { instructors })
+        })
     },
     post(req, res) {
         const keys = Object.keys(req.body)

@@ -217,9 +217,10 @@ tr:last-child td {
     border: none;
 }
 
-.table-container a.button {
+.table-container .button {
     display: initial;
     margin: 0;
+    width: auto;
     padding: 8px 16px;
     text-transform: uppercase;
     font-size: 12px;
@@ -246,4 +247,21 @@ th {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.7px;
+}
+
+.table-container .header {
+    margin-bottom: 32px;
+}
+
+.table-container .header,
+.table-container .header form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.table-container .header form input {
+    border: 1px solid #888;
+    padding: 2px 8px;
+    margin-right: 8px;
 }

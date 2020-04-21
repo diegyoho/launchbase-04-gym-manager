@@ -3,21 +3,40 @@ const Instructor = require('../models/Instructor')
 
 module.exports = {
     index(req, res) {
+        const { filter } = req.query
 
-        Instructor.all(function (instructors) {
-            const _temp = []
+        if (filter) {
+            Instructor.findBy(filter, function (instructors) {
+                const _temp = []
 
-            for (const instructor of instructors) {
-                _temp.push({
-                    ...instructor,
-                    services: instructor.services.split(',')
-                })
-            }
+                for (const instructor of instructors) {
+                    _temp.push({
+                        ...instructor,
+                        services: instructor.services.split(',')
+                    })
+                }
 
-            instructors = _temp
+                instructors = _temp
 
-            return res.render('instructors/index', { instructors })
-        })
+                return res.render('instructors/index', { instructors, filter })
+            })
+        } else {
+            Instructor.all(function (instructors) {
+                const _temp = []
+
+                for (const instructor of instructors) {
+                    _temp.push({
+                        ...instructor,
+                        services: instructor.services.split(',')
+                    })
+                }
+
+                instructors = _temp
+
+                return res.render('instructors/index', { instructors })
+            })
+        }
+
     },
     create(req, res) {
         return res.render('instructors/create')

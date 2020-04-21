@@ -3,6 +3,13 @@
 {% block content %}
 
     <div class="card table-container">
+        <div class="header">
+            <a href="/instructors/create" class="button">novo</a>
+            <form action="/instructors" method="GET">
+                <input type="text" name="filter" placeholder="Nome ou Acompanhamento" value="{{ filter }}">
+                <button type="submit" class="button">Filtrar</button>
+            </form>
+        </div>
         <table>
             <thead>
                 <tr>
@@ -32,11 +39,6 @@
                         </td>
                     </tr>
                 {% endfor %}
-                <tr>
-                    <td>
-                        <a href="/instructors/create" class="button">novo</a>
-                    </td>
-                </tr>
             </tbody>
         </table>
     </div>
