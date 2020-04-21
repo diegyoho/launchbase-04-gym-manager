@@ -1,5 +1,6 @@
 const { blood, date } = require('../../lib/utils')
 const Member = require('../models/Member')
+const Instructor = require('../models/Instructor')
 
 module.exports = {
     index(req, res) {
@@ -27,7 +28,8 @@ module.exports = {
             gender,
             blood,
             height,
-            weight
+            weight,
+            instructor,
         } = req.body
 
         const data = [
@@ -38,7 +40,8 @@ module.exports = {
             gender,
             blood,
             height,
-            weight
+            weight,
+            instructor
         ]
 
         Member.create(data, function (member) {
@@ -70,7 +73,10 @@ module.exports = {
                 birth: date(member.birth).iso
             }
 
-            return res.render('members/edit', { member })
+            Instructor.all(function (instructors) {
+                return res.render('members/edit', { member, instructors })
+            })
+
         })
     },
     put(req, res) {
@@ -90,6 +96,7 @@ module.exports = {
             blood,
             height,
             weight,
+            instructor,
             id
         } = req.body
 
@@ -102,6 +109,7 @@ module.exports = {
             blood,
             height,
             weight,
+            instructor,
             id
         ]
 
