@@ -1,5 +1,4 @@
 const { age, date, degree } = require('../../lib/utils')
-const Intl = require('intl')
 const Instructor = require('../models/Instructor')
 
 module.exports = {
@@ -28,7 +27,7 @@ module.exports = {
 
         for (const key of keys) {
             if (req.body[key] === "")
-                return res.send('Por favor, preencha todos os campos!')
+                return res.send('Please, fill all fields!')
         }
 
         const {
@@ -43,11 +42,11 @@ module.exports = {
         const data = [
             avatar_url,
             name,
-            birth,
+            date(birth).iso,
             gender,
             degree,
             services,
-            created_at = date(Date.now()).iso
+            date(Date.now()).iso
         ]
 
         Instructor.create(data, function (instructor) {
@@ -58,6 +57,8 @@ module.exports = {
         const { id } = req.params
 
         Instructor.find(id, function (instructor) {
+            if (!instructor) return res.send('Instructor not found!')
+
             instructor = {
                 ...instructor,
                 age: age(instructor.birth),
@@ -72,6 +73,8 @@ module.exports = {
         const { id } = req.params
 
         Instructor.find(id, function (instructor) {
+            if (!instructor) return res.send('Instructor not found!')
+
             instructor = {
                 ...instructor,
                 birth: date(instructor.birth).iso
@@ -85,7 +88,7 @@ module.exports = {
 
         for (const key of keys) {
             if (req.body[key] === "")
-                return res.send('Por favor, preencha todos os campos!')
+                return res.send('Please, fill all fields')
         }
 
         const {
@@ -101,7 +104,7 @@ module.exports = {
         const data = [
             avatar_url,
             name,
-            birth,
+            date(birth).iso,
             gender,
             degree,
             services,
