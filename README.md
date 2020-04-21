@@ -33,6 +33,8 @@
 </div>
 
 ## Desafios
+
+### Módulo 04
 - [x] Desafio 4-1: Header 
 <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-1-header.md">Descrição</a>
 - [x] Desafio 4-2: Card do Professor 
@@ -47,6 +49,12 @@
 <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-6-list-teachers.md">Descrição</a>
 - [x] Desafio 4-7: Estruturando estudantes
 <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-7-students.md">Descrição</a>
+
+### Módulo 05
+- [x] Desafio 5-1: Refatorando aplicação e configurando o BD
+<a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-05/blob/master/desafios/05-1-refatorando-aplicacao.md">Descrição</a>
+- [x] Desafio 5-2: Interagindo com o BD
+<a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-05/blob/master/desafios/05-2-interagindo-bd.md">Descrição</a>
 
 #### Instalação:
 
