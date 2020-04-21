@@ -12,24 +12,24 @@
     <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%23F8952D">
   </a>
 
-  <a href="https://github.com/chicodiegomoreira/launchbase-04/blob/master/LICENSE" >
+  <a href="https://github.com/diegyohoho/launchbase-04/blob/master/LICENSE" >
     <img alt="License" src="https://img.shields.io/badge/license-MIT-%23F8952D">
   </a>
   
-  <a href="https://www.linkedin.com/in/chicodiegomoreira/" >
-    <img alt="My Linkedin" src="https://img.shields.io/badge/-chicodiegomoreira-%230077B5?style=social&logo=linkedin">
+  <a href="https://www.linkedin.com/in/diegyohoho/" >
+    <img alt="My Linkedin" src="https://img.shields.io/badge/-diegyohoho-%230077B5?style=social&logo=linkedin">
   </a>
 
 </p>
 
 <p align="center">
-  <a href="https://github.com/chicodiegomoreira/launchbase-04">Início</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/diegyohoho/launchbase-04">Início</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#desafios">Desafios</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#licença">Licença</a>
 </p>
 
 <div align="center">
-    <img alt="Exemplo" src="https://github.com/chicodiegomoreira/launchbase-04-gym-manager/blob/master/previews/preview-6.gif" width="100%" />
+    <img alt="Exemplo" src="https://github.com/diegyohoho/launchbase-04-gym-manager/blob/master/previews/preview-6.gif" width="100%" />
 </div>
 
 ## Desafios
@@ -59,8 +59,8 @@ npm install
 npm start
 ```
 
-###### Código [aqui](https://github.com/chicodiegomoreira/launchbase-04-gym-manager/tree/master/gym-manager)!
+###### Código [aqui](https://github.com/diegyohoho/launchbase-04-gym-manager/tree/master/gym-manager)!
 
 ## Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/chicodiegomoreira/launchbase-04/blob/master/LICENSE) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/diegyohoho/launchbase-04/blob/master/LICENSE) para mais detalhes.
