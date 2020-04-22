@@ -29,7 +29,7 @@
 </p>
 
 <div align="center">
-    <img alt="Exemplo" src="previews/preview-7.gif" width="100%" />
+    <img alt="Exemplo" src="previews/preview-8.gif" width="100%" />
 </div>
 
 ## Desafios
@@ -57,7 +57,7 @@
 <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-05/blob/master/desafios/05-2-interagindo-bd.md">Descrição</a>
 - [x] Desafio 5-3: Relacionamentos e filtros no BD
 <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-05/blob/master/desafios/05-3-relacionamentos-filtros-bd.md">Descrição</a>
-- [ ] Desafio 5-4: Paginação de resultados no BD
+- [x] Desafio 5-4: Paginação de resultados no BD
 <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-05/blob/master/desafios/05-4-paginacao-bd.md">Descrição</a>
 
 #### Instalação:
