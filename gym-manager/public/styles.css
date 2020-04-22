@@ -249,8 +249,13 @@ th {
     letter-spacing: 0.7px;
 }
 
+.table-container {
+    display: grid;
+    grid-template: 64px 1fr 32px / 1fr;
+}
+
 .table-container .header {
-    margin-bottom: 32px;
+    align-self: start;
 }
 
 .table-container .header,
@@ -264,4 +269,23 @@ th {
     border: 1px solid #888;
     padding: 2px 8px;
     margin-right: 8px;
+}
+
+/* === PAGINATION === */
+
+.table-container .pagination {
+    align-self: end;
+    justify-self: center;
+    color: var(--primary-color);
+}
+
+.table-container .pagination * {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+.table-container .pagination a:hover {
+    font-weight: bold;
+    text-decoration: underline;
 }

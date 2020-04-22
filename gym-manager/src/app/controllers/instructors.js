@@ -3,39 +3,70 @@ const Instructor = require('../models/Instructor')
 
 module.exports = {
     index(req, res) {
-        const { filter } = req.query
+        let { filter, page, limit } = req.query
 
-        if (filter) {
-            Instructor.findBy(filter, function (instructors) {
-                const _temp = []
+        page = page || 1
+        limit = limit || 2
 
-                for (const instructor of instructors) {
-                    _temp.push({
-                        ...instructor,
-                        services: instructor.services.split(',')
-                    })
-                }
+        let offset = limit * (page - 1)
 
-                instructors = _temp
-
-                return res.render('instructors/index', { instructors, filter })
-            })
-        } else {
-            Instructor.all(function (instructors) {
-                const _temp = []
-
-                for (const instructor of instructors) {
-                    _temp.push({
-                        ...instructor,
-                        services: instructor.services.split(',')
-                    })
-                }
-
-                instructors = _temp
-
-                return res.render('instructors/index', { instructors })
-            })
+        const params = {
+            filter,
+            limit,
+            offset
         }
+
+        Instructor.paginate(params, function (instructors) {
+            const _temp = []
+
+            for (const instructor of instructors) {
+                _temp.push({
+                    ...instructor,
+                    services: instructor.services.split(',')
+                })
+            }
+
+            instructors = _temp
+
+            const pagination = {
+                totalPages: Math.ceil(instructors[0].total / limit),
+                page
+            }
+
+            return res.render('instructors/index', { instructors, filter, pagination })
+        })
+
+        // if (filter) {
+        //     Instructor.findBy(filter, function (instructors) {
+        //         const _temp = []
+
+        //         for (const instructor of instructors) {
+        //             _temp.push({
+        //                 ...instructor,
+        //                 services: instructor.services.split(',')
+        //             })
+        //         }
+
+        //         instructors = _temp
+
+        //         return res.render('instructors/index', { instructors, filter })
+        //     })
+        // } else {
+        //     Instructor.all(function (instructors) {
+        //         const _temp = []
+
+        //         for (const instructor of instructors) {
+        //             _temp.push({
+        //                 ...instructor,
+        //                 services: instructor.services.split(',')
+        //             })
+        //         }
+
+        //         instructors = _temp
+
+        //         return res.render('instructors/index', { instructors })
+        //     })
+        // }
 
     },
     create(req, res) {
