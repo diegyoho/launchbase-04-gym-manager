@@ -62,12 +62,14 @@
 
 #### Instalação:
 
-```
+Tenha pré-configurado o postgres(./gym-manager/src/config/db.js), com o banco de dados gymmanager e as tabelas (instructors, members). Certifique-se de estar na raiz do projeto(pasta ./gym-manager) e execute no terminal:
+
+```bash
 npm install
 ```
 
 #### Execução:
-```
+```bash
 npm start
 ```
 
