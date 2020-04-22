@@ -43,6 +43,17 @@ module.exports = {
             callback(results.rows[0])
         })
     },
+    findBy(filter, callback) {
+        db.query(`
+            SELECT *
+            FROM members
+            WHERE name ILIKE '%${filter}%'
+            OR email ILIKE '%${filter}%'`, function (err, results) {
+            if (err) throw `Database error! ${err}`
+
+            callback(results.rows)
+        })
+    },
     update(data, callback) {
         const query = `
             UPDATE members SET

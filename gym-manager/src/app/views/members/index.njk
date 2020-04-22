@@ -5,6 +5,10 @@
     <div class="card table-container">
         <div class="header">
             <a href="/members/create" class="button">novo</a>
+            <form action="/members" method="GET">
+                <input type="text" name="filter" placeholder="Nome ou Email" value="{{ filter }}">
+                <button type="submit" class="button">Filtrar</button>
+            </form>
         </div>
         <table>
             <thead>
