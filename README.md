@@ -29,7 +29,7 @@
 </p>
 
 <div align="center">
-    <img alt="Exemplo" src="https://github.com/diegyohoho/launchbase-04-gym-manager/blob/master/previews/preview-6.gif" width="100%" />
+    <img alt="Exemplo" src="previews/preview-6.gif" width="100%" />
 </div>
 
 ## Desafios
