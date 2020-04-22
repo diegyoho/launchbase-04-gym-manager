@@ -29,7 +29,7 @@
 </p>
 
 <div align="center">
-    <img alt="Exemplo" src="previews/preview-6.gif" width="100%" />
+    <img alt="Exemplo" src="previews/preview-7.gif" width="100%" />
 </div>
 
 ## Desafios
