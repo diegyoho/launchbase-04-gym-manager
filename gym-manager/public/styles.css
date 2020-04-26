@@ -14,10 +14,27 @@
     box-sizing: border-box;
 }
 
+.container {
+    width: 90%;
+    max-width: 832px;
+    margin: 0 auto;
+}
+
+html {
+    /* 1rem == 10px */
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     background-color: var(--primary-color);
-    font-family: 'Roboto', sans-serif;
     color: var(--terciary-color);
+    font-size: 1.6rem;
 }
 
 header {
@@ -28,7 +45,7 @@ header {
 }
 
 .nav {
-    font-size: 22px;
+    font-size: 2.2rem;
 }
 
 .nav a + a {
@@ -70,7 +87,6 @@ header {
 
 .card {
     background-color: var(--secondary-color);
-    width: 832px;
     margin: 48px auto 0;
 
     display: grid;
@@ -113,14 +129,18 @@ header {
 
 .details h3,
 .details .item div:nth-child(1) {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
     letter-spacing: 0.7px;
 }
 
 .details .item div:nth-child(2) {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.8rem;
+}
+
+.details .item span.label {
+    margin-top: 8px;
 }
 
 .details h3 {
@@ -135,11 +155,10 @@ span.label {
     border-radius: 16px;
     color: var(--secondary-color);
     margin-right: 4px;
-    margin-top: 8px;
     display: inline-block;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 /* === FORM === */
@@ -150,7 +169,12 @@ input, select {
     background-color: var(--secondary-color);
     color: var(--terciary-color);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.8rem;
+}
+
+input::placeholder {
+    font-size: 1.6rem;
+    font-weight: normal;
 }
 
 input[type="radio"] {
@@ -161,20 +185,15 @@ input[type="radio"] {
     margin-left: -6px;
 }
 
-input::placeholder {
-    font-size: 16px;
-    font-weight: normal;
-}
-
 a.button,
 #form-delete button[type="submit"],
 button[type="submit"] {
-    padding: 8px 32px;
+    padding: 8px 16px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     margin-top: 32px;
     width: 100%;
-    font-size: 16px;
+    font-size: 1.6rem;
     cursor: pointer;
 }
 
@@ -223,18 +242,18 @@ tr:last-child td {
     width: auto;
     padding: 8px 16px;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
-tbody tr td:first-child {
+tbody tr td:first-child div {
     display: grid;
     grid-template-columns: 64px 1fr;
     align-items: center;
 }
 
 tbody tr td:first-child span {
-    width: 64px;
-    height: 64px;
+    width: 56px;
+    height: 56px;
     background-position: center;
     background-size: cover;
     border-radius: 50%;
@@ -244,12 +263,12 @@ tbody tr td:first-child span {
 th {
     text-transform: uppercase;
     color: var(--primary-color);
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
     letter-spacing: 0.7px;
 }
 
-.table-container {
+.card.table-container {
     display: grid;
     grid-template: 64px 1fr 32px / 1fr;
 }
@@ -288,4 +307,47 @@ th {
 .table-container .pagination a:hover {
     font-weight: bold;
     text-decoration: underline;
+}
+
+/* === MEDIA QUERIES === */
+
+@media (max-width: 830px) {
+    td div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    td:nth-child(2) div span {
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .can-hide {
+        display: none;
+    }
+}
+
+@media (max-width: 560px) {
+    .can-hide-2 {
+        display: none;
+    }
+
+    .card.table-container {
+        grid-template: 80px 1fr 32px / 1fr;
+    }
+
+    .table-container .header {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .table-container .header form {
+        margin-top: 8px;
+    }
+
+    .card {
+        grid-template: 200px 1fr / 1fr;
+    }
 }

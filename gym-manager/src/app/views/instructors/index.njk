@@ -2,7 +2,7 @@
 
 {% block content %}
 
-    <div class="card table-container">
+    <div class="card container table-container">
         <div class="header">
             <a href="/instructors/create" class="button">novo</a>
             <form action="/instructors" method="GET">
@@ -14,8 +14,8 @@
             <thead>
                 <tr>
                     <th>Nome</th>
-                    <th>Acompanhamento</th>
-                    <th>Alunos</th>
+                    <th class="can-hide-2">Acompanhamento</th>
+                    <th class="can-hide">Alunos</th>
                     <th>Ação</th>
                 </tr>
             </thead>
@@ -23,15 +23,19 @@
                 {% for instructor in instructors %}
                     <tr>
                         <td>
-                            <span style="background-image: url({{ instructor.avatar_url }})"></span>
-                            {{ instructor.name }}
+                            <div>
+                                <span style="background-image: url({{ instructor.avatar_url }})"></span>
+                                {{ instructor.name }}
+                            </div>
                         </td>
-                        <td>
-                            {% for service in instructor.services %}
-                                <span class="label">{{ service }}</span>
-                            {% endfor %}
+                        <td class="can-hide-2">
+                            <div>
+                                {% for service in instructor.services %}
+                                    <span class="label">{{ service }}</span>
+                                {% endfor %}
+                            </div>
                         </td>
-                        <td>
+                        <td class="can-hide">
                             {{ instructor.students }}
                         </td>
                         <td>

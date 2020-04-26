@@ -2,7 +2,7 @@
 
 {% block content %}
 
-    <div class="card table-container">
+    <div class="card container table-container">
         <div class="header">
             <a href="/members/create" class="button">novo</a>
             <form action="/members" method="GET">
@@ -14,9 +14,9 @@
             <thead>
                 <tr>
                     <th>Nome</th>
-                    <th>Email</th>
-                    <th>Altura</th>
-                    <th>Peso</th>
+                    <th class="can-hide-2">Email</th>
+                    <th class="can-hide">Altura</th>
+                    <th class="can-hide">Peso</th>
                     <th>Ação</th>
                 </tr>
             </thead>
@@ -24,10 +24,14 @@
                 {% for member in members %}
                     <tr>
                         <td>
-                            <span style="background-image: url({{ member.avatar_url }})"></span>{{ member.name }}</td>
-                        <td>{{ member.email }}</td>
-                        <td>{{ member.height }}cm</td>
-                        <td>{{ member.weight }}kg</td>
+                            <div>
+                                <span style="background-image: url({{ member.avatar_url }})"></span>
+                                {{ member.name }}
+                            </div>
+                        </td>
+                        <td class="can-hide-2">{{ member.email }}</td>
+                        <td class="can-hide">{{ member.height }}cm</td>
+                        <td class="can-hide">{{ member.weight }}kg</td>
                         <td>
                             <a href="/members/{{ member.id }}" class="button">ver</a>
                         </td>

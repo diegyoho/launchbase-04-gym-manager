@@ -32,6 +32,13 @@
     <img alt="Exemplo" src="previews/preview-8.gif" width="100%" />
 </div>
 
+#### CSS Responsive
+
+<div align="center">
+    <img alt="Exemplo" src="previews/preview-9.gif" width="100%" />
+    <img alt="Exemplo" src="previews/preview-10.gif" width="100%" />
+</div>
+
 ## Desafios
 
 ### Módulo 04
